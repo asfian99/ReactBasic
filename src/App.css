@@ -1,38 +1,63 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f1f5f8;
+  color: #102a42;
+  font-family: "Open Sans", sans-serif;
+}
+.title {
+  font-size: 2.5rem;
   text-align: center;
+  margin: 2rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.card {
+  display: inline-block;
+  width: 45vw;
+  box-shadow: 0px 0px 14px 1px rgba(22, 15, 15, 0.2);
+  margin: 2rem 0 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.card .mb {
+  margin: 1rem;
+}
+.card-name {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-price {
+  color: #49a6e9;
+  background: #ebf7ff;
+  padding: 0.25rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.article {
+  opacity: 80%;
+}
+.btn {
+  padding: 0.5rem 3rem;
+  font-size: 1rem;
+  border: 1px solid #d7385e;
+  background: #fff;
+  color: #d7385e;
 }
