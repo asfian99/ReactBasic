@@ -25,6 +25,7 @@ body {
   width: 45vw;
   box-shadow: 0px 0px 14px 1px rgba(22, 15, 15, 0.2);
   margin: 2rem 0 0;
+  background: #fff;
 }
 .card img {
   width: 100%;
@@ -32,13 +33,13 @@ body {
   object-fit: cover;
 }
 .card .mb {
-  margin: 1rem;
+  margin: 1rem 2rem;
 }
 .card-name {
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 2rem;
   align-items: center;
 }
 .card-title {
@@ -60,4 +61,12 @@ body {
   border: 1px solid #d7385e;
   background: #fff;
   color: #d7385e;
+  cursor: pointer;
+}
+.readmore-btn {
+  border: none;
+  color: #49a6e9;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
 }
