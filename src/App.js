@@ -1,4 +1,5 @@
-import React, { useState, sueEffect, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import "./tailwind.output.css";
 import "./App.css";
 
 const url = "https://course-api.netlify.app/api/react-tabs-project";
@@ -22,12 +23,17 @@ function App() {
   if (loading) {
     return (
       <section>
-        <h1>loading...</h1>
+        <h1 className="text-purple-600">loading...</h1>
       </section>
     );
   }
 
-  return <h1>Jobs</h1>;
+  return (
+    <>
+      <h1>Jobs</h1>
+      <button class="text-blue-600 hover:text-red-600 ">Button</button>
+    </>
+  );
 }
 
 export default App;
