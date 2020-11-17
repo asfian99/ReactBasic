@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "tailwind:build": "postcss NODE_ENV=production src/tailwind.css -o src/tailwind.output.css",
+    "tailwind:build": "cross-env NODE_ENV=production postcss src/tailwind.css -o src/tailwind.output.css",
     "tailwind:dev": "postcss src/tailwind.css -o src/tailwind.output.css",
     "prestart": "npm run tailwind:dev",
     "prebuild": "npm run tailwind:build"
@@ -42,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
   }
 }
